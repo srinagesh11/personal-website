@@ -40,7 +40,7 @@ const data = {
       ]
     },
     "resume":{
-      "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+      "skillmessage":"",
       "education":[
         {
           "school":"Jawaharlal Nehru Technological University Hyderabad",
