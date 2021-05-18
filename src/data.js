@@ -6,7 +6,7 @@ const data = {
       "image":"profilepic.jpg",
       "bio":"Software developer with 2.9+ years of experience in developing full-stack applications in the information technology industry involved in complete SDLC, coupled with experience in researching new technologies. Strong problem-solving skills and able to work well independently or as a part of the professional Software Development team.",
       "contactmessage":"",
-      "email": "srinagesh11@gmail.com",
+      "email": "srinageshkeerti0588@gmail.com",
       "phone": "+91 9963161723",
       "address":{
         "street":"Mahendra Hills",
@@ -15,7 +15,7 @@ const data = {
         "zip": "500026"
       },
       "website": "http://www.srinageshkeerti.com",
-      "resumedownload":"https://drive.google.com/file/d/1wFcpNGblwe1iNAAxdgg--QuuG3LbpQ6-/view?usp=sharing",
+      "resumedownload":"https://drive.google.com/file/d/1AM8KmUjefRWfTuV3RzEhIuSfSjlQLH5P/view?usp=sharing",
       "social":[
         {
           "name":"facebook",
