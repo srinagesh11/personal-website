@@ -52,7 +52,7 @@ const data = {
         {
           "company":"Intuit CW",
           "title":"Software Engineer ",
-          "years":"January 2021 - Present",
+          "years":"January 2021 - July 2021",
           "description":"Working as full stack developer for three products. Technical stack for this role includes Reactjs, Spring, Java, Hibernate, Amazon Web Services"
         },
         {
