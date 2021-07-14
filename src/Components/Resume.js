@@ -5,7 +5,7 @@ function Resume(props) {
       var skillmessage = props.data.skillmessage;
       var education = props.data.education.map(function(education){
         return <div key={education.school}><h3>{education.school}</h3>
-        <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
+        <p className="info">{education.degree} {" "}<span>&bull;</span><em className="date">{education.graduated}</em></p>
         <p>{education.description}</p></div>
       })
       var work = props.data.work.map(function(work){
