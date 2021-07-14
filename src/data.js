@@ -44,7 +44,7 @@ const data = {
       "education":[
         {
           "school":"Jawaharlal Nehru Technological University Hyderabad",
-          "degree":"Bachelor of Technology(B Tech)",
+          "degree":"Bachelor of Technology, Computer Science and Engineering",
           "graduated":"April 2018",
         }
       ],
