@@ -4,7 +4,7 @@ const data = {
       "occupation":"Full Stack Software Engineer",
       "description":"with knowledge of cloud services",
       "image":"profilepic.jpg",
-      "bio":"Software developer with 2.9+ years of experience in developing full-stack applications in the information technology industry involved in complete SDLC, coupled with experience in researching new technologies. Strong problem-solving skills and able to work well independently or as a part of the professional Software Development team.",
+      "bio":"Software developer with 3 years of experience in developing full-stack applications in the information technology industry involved in complete SDLC, coupled with experience in researching new technologies. Strong problem-solving skills and able to work well independently or as a part of the professional Software Development team.",
       "contactmessage":"",
       "email": "srinageshkeerti0588@gmail.com",
       "phone": "+91 9963161723",
