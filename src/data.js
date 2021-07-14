@@ -2,7 +2,7 @@ const data = {
     "main": {
       "name":"Srinagesh Keerti",
       "occupation":"Full Stack Software Engineer",
-      "description":"Working as full stack developer with knowledge of cloud services",
+      "description":"with knowledge of cloud services",
       "image":"profilepic.jpg",
       "bio":"Software developer with 2.9+ years of experience in developing full-stack applications in the information technology industry involved in complete SDLC, coupled with experience in researching new technologies. Strong problem-solving skills and able to work well independently or as a part of the professional Software Development team.",
       "contactmessage":"",
@@ -46,6 +46,23 @@ const data = {
           "school":"Jawaharlal Nehru Technological University Hyderabad",
           "degree":"Bachelor of Technology(B Tech)",
           "graduated":"April 2018",
+        }
+      ],
+      "awards":[
+        {
+          "award":"High Five - Individual Awards",
+          "company":"Intuit CW",
+          "year":"June 2021",
+        },
+        {
+          "award":"Bravo - Team Awards",
+          "company":"Actifio",
+          "year":"December 2020",
+        },
+        {
+          "award":"Code Fest - Level I",
+          "company":"Virtusa",
+          "year":"February 2017",
         }
       ],
       "work":[

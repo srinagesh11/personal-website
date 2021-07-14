@@ -14,6 +14,12 @@ function Resume(props) {
             <p>{work.description}</p>
         </div>
       })
+      var awards = props.data.awards.map(function(awards){
+        return <div key={awards.award}><h3>{awards.award}</h3>
+            <p className="info">{awards.company}<span>&bull;</span> <em className="date">{awards.year}</em></p>
+            <br></br>
+        </div>
+      })
       var skills = props.data.skills.map(function(skills){
         var className = 'bar-expand '+skills.name.toLowerCase();
         return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
@@ -69,6 +75,17 @@ function Resume(props) {
 				</div>
 			</div>
       </div>
+
+      <div className="row work">
+
+         <div className="three columns header-col">
+            <h1><span>Awards</span></h1>
+         </div>
+
+         <div className="nine columns main-col">
+          {awards}
+        </div>
+    </div>
    </section>
     );
   }
