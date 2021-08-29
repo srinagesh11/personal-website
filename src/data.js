@@ -87,19 +87,19 @@ const data = {
       ],
       "skills":[
         {
-          "name":"ReactJs",
-          "level":"70%"
-        },
-        {
           "name":"Java",
-          "level":"90%"
-        },
-        {
-          "name":"Spring",
           "level":"70%"
         },
         {
           "name":"JavaScript",
+          "level":"90%"
+        },
+        {
+          "name":"ReactJs",
+          "level":"70%"
+        },
+        {
+          "name":"Spring",
           "level":"80%"
         },
         {
@@ -111,7 +111,15 @@ const data = {
           "level":"50%"
         },
         {
-          "name":"HTML",
+          "name":"Hibernate",
+          "level":"80%"
+        },
+        {
+          "name":"SQL",
+          "level":"80%"
+        },
+        {
+          "name":"NoSQL",
           "level":"80%"
         }
       ]
