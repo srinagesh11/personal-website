@@ -113,10 +113,6 @@ const data = {
         {
           "name":"HTML",
           "level":"80%"
-        },
-        {
-          "name":"Elastic Search",
-          "level":"50%"
         }
       ]
     },
