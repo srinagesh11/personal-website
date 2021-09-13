@@ -7,12 +7,11 @@ const data = {
       "bio":"Software developer with 3 years of experience in developing full-stack applications in the information technology industry involved in complete SDLC, coupled with experience in researching new technologies. Strong problem-solving skills and able to work well independently or as a part of the professional Software Development team.",
       "contactmessage":"",
       "email": "srinageshkeerti0588@gmail.com",
-      "phone": "+91 9963161723",
+      "phone": "7049683387",
       "address":{
-        "street":"Mahendra Hills",
-        "city":"Hyderabad",
-        "state":"Telangana",
-        "zip": "500026"
+        "city":"Santa Clara",
+        "state":"California",
+        "zip": "95053"
       },
       "website": "http://www.srinageshkeerti.com",
       "resumedownload":"https://drive.google.com/file/d/1RSz4EQzKBP-j2ja6g0vQf6WdLZ26vKi2/view?usp=sharing",
@@ -51,7 +50,7 @@ const data = {
       "awards":[
         {
           "award":"High Five - Individual Awards",
-          "company":"Intuit CW",
+          "company":"Intuit",
           "year":"June 2021",
         },
         {
@@ -67,16 +66,16 @@ const data = {
       ],
       "work":[
         {
-          "company":"Intuit CW",
-          "title":"Software Engineer ",
+          "company":"Intuit",
+          "title":"CW Software Engineer",
           "years":"January 2021 - July 2021",
-          "description":"Working as full stack developer for three products. Technical stack for this role includes Reactjs, Spring, Java, Hibernate, Amazon Web Services"
+          "description":"Working as full stack developer for two products. Technical stack for this role includes Reactjs, Spring, Java, Hibernate, Amazon Web Services"
         },
         {
           "company":"Actifio",
           "title":"Software Engineer",
           "years":"September 2019 - December 2020",
-          "description":"Worked as complete backend developer for six actifio products. Technical stack for this role includes Spring, Java, Hibernate, Elastic Search, Amazon Web Services, Azure"
+          "description":"Worked as complete backend developer for six actifio products. Technical stack for this role includes Spring, Java, Hibernate, Amazon Web Services, Azure"
         },
         {
           "company":"Virtusa",
