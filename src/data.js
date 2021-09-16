@@ -42,6 +42,11 @@ const data = {
       "skillmessage":"",
       "education":[
         {
+          "school":"Santa Clara University",
+          "degree":"Master of Science, Computer Science and Engineering",
+          "graduated":"December 2022",
+        },
+        {
           "school":"Jawaharlal Nehru Technological University Hyderabad",
           "degree":"Bachelor of Technology, Computer Science and Engineering",
           "graduated":"April 2018",
