@@ -14,7 +14,7 @@ const data = {
         "zip": "95053"
       },
       "website": "http://www.srinageshkeerti.com",
-      "resumedownload":"https://drive.google.com/file/d/1_9rBfKezWfrUfPu2qlSG7ni3zqp7Ji3-/view?usp=sharing",
+      "resumedownload":"https://drive.google.com/file/d/1DK3ZrXXITVaDNS3J02xFqUmkE5VMdTEK/view?usp=sharing",
       "social":[
         {
           "name":"facebook",
