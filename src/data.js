@@ -91,11 +91,11 @@ const data = {
       ],
       "projects":[
         {
-          "title":"Personal Website",
-          "years":"Jul 2021 - Aug 2021",
-          "description":"Developed a personal website and configured CI/CD of the application in Heroku",
-          "tools": "ReactJS, Bootstrap, HTML5, CSS, EmailJS",
-          "link" : "https://github.com/srinagesh11/personal-website"
+          "title":"Weather Application",
+          "years":"Nov 2021 - Nov 2021",
+          "description":"This is weather app which displays weather info based on the location given. Used a third party api which uses a location name and convert it into latitude and longitude based on which the temperature and other weather details are displayed.", 
+          "tools": "ReactJS, NodeJS, MongoDB, CSS, HTML",
+          "link" : "https://weather-app-maestro.herokuapp.com/"
         },
         {
           "title":"Online Shopping Application",
@@ -103,6 +103,20 @@ const data = {
           "description":"Implemented a shopping web application where users can log in and sell their products online. The application is like a Facebook marketplace.",
           "tools": "ReactJS, NodeJS, MongoDB, CSS, HTML",
           "link" : "https://github.com/srinagesh11/online-shopping"
+        },
+        {
+          "title":"Personal Website",
+          "years":"Jul 2021 - Aug 2021",
+          "description":"Developed a personal website and configured CI/CD of the application in Heroku",
+          "tools": "ReactJS, Bootstrap, HTML5, CSS, EmailJS",
+          "link" : "https://github.com/srinagesh11/personal-website"
+        },
+        
+        {
+          "title":"Chatting Application",
+          "years":"Jan 2021 - Mar 2021",
+          "description":"This is basic chat application where two or more users can communicate. It has been developed using socketio and nodejs", 
+          "link" : "https://github.com/srinagesh11/chatting-application"
         },
         {
           "title":"Secure Real Estate Web Portal",
