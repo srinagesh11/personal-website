@@ -14,6 +14,12 @@ function Resume(props) {
             <p>{work.description}</p>
         </div>
       })
+      var projects = props.data.projects.map(function(projects){
+        return <div key={projects.title} >
+            <p className="info"><a href={projects.link}>{projects.title}</a><span>&bull;</span> <em className="date">{projects.years}</em></p>
+            <p>{projects.description}</p>
+        </div>
+      })
       var awards = props.data.awards.map(function(awards){
         return <div key={awards.award}><h3>{awards.award}</h3>
             <p className="info">{awards.company}<span>&bull;</span> <em className="date">{awards.year}</em></p>
@@ -47,11 +53,22 @@ function Resume(props) {
       <div className="row work">
 
          <div className="three columns header-col">
-            <h1><span>Work</span></h1>
+            <h1><span>Experience</span></h1>
          </div>
 
          <div className="nine columns main-col">
           {work}
+        </div>
+    </div>
+
+    <div className="row work">
+
+         <div className="three columns header-col">
+            <h1><span>Projects</span></h1>
+         </div>
+
+         <div className="nine columns main-col">
+          {projects}
         </div>
     </div>
 

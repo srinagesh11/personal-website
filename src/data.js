@@ -6,7 +6,7 @@ const data = {
       "image":"profilepic.jpg",
       "bio":"Software developer with 3 years of experience in developing full-stack applications in the information technology industry involved in complete SDLC, coupled with experience in researching new technologies. Strong problem-solving skills and able to work well independently or as a part of the professional Software Development team.",
       "contactmessage":"",
-      "email": "srinageshkeerti0588@gmail.com",
+      "email": "skeerti@scu.edu",
       "phone": "7049683387",
       "address":{
         "city":"Santa Clara",
@@ -44,7 +44,7 @@ const data = {
         {
           "school":"Santa Clara University",
           "degree":"Master of Science, Computer Science and Engineering",
-          "graduated":"December 2022",
+          "graduated":"March 2023",
         },
         {
           "school":"Jawaharlal Nehru Technological University Hyderabad",
@@ -87,6 +87,29 @@ const data = {
           "title":"Associate Engineer",
           "years":"June 2018 - July 2019",
           "description":"Worked as full stack developer for Qatar Airways as a client. Technical stack for this role includes ReactJs, Java, Hibernate"
+        }
+      ],
+      "projects":[
+        {
+          "title":"Personal Website",
+          "years":"Jul 2021 - Aug 2021",
+          "description":"Developed a personal website and configured CI/CD of the application in Heroku",
+          "tools": "ReactJS, Bootstrap, HTML5, CSS, EmailJS",
+          "link" : "https://github.com/srinagesh11/personal-website"
+        },
+        {
+          "title":"Online Shopping Application",
+          "years":"Jun 2021 - Sep 2021",
+          "description":"Implemented a shopping web application where users can log in and sell their products online. The application is like a Facebook marketplace.",
+          "tools": "ReactJS, NodeJS, MongoDB, CSS, HTML",
+          "link" : "https://github.com/srinagesh11/online-shopping"
+        },
+        {
+          "title":"Secure Real Estate Web Portal",
+          "years":"Feb 2018 - Apr 2018",
+          "description":"Built a real estate website with a government module that has access to authorize the properties uploaded by the users. These properties pop up on Google Maps based on their geometric dimensions.",
+          "tools": "Java, JSP, Servlets, JavaScript",
+          "link" : "https://github.com/srinagesh11/Realestate-webportal"
         }
       ],
       "skills":[
