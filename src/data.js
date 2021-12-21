@@ -74,19 +74,19 @@ const data = {
           "company":"Intuit",
           "title":"Software Engineer",
           "years":"January 2021 - July 2021",
-          "description":"Working as full stack developer for two products. Technical stack for this role includes Reactjs, Spring, Java, Hibernate, Amazon Web Services"
+          "description":"Worked as full-stack developer for two products. Technical stack for this role includes ReactJS, Spring, Java, JavaScript, Amazon Web Services, NodeJS, Docker, Kubernetes, SQL, NoSQL, REST APIs"
         },
         {
           "company":"Actifio",
           "title":"Software Engineer",
           "years":"September 2019 - December 2020",
-          "description":"Worked as complete backend developer for six actifio products. Technical stack for this role includes Spring, Java, Hibernate, Amazon Web Services, Azure"
+          "description":"Worked as backend developer for three actifio products. Technical stack for this role includes Spring, Java, Hibernate, Amazon Web Services, Azure, Microservices, REST APIs, SQL"
         },
         {
           "company":"Virtusa",
           "title":"Associate Engineer",
           "years":"June 2018 - July 2019",
-          "description":"Worked as full stack developer for Qatar Airways as a client. Technical stack for this role includes ReactJs, Java, Hibernate"
+          "description":"Worked as full-stack developer for Qatar Airways and IBM Health Watson. Technical stack for this role includes ReactJS, Java, NodeJS, NoSQL, SQL, MongoDB, REST APIs"
         }
       ],
       "projects":[
@@ -165,40 +165,6 @@ const data = {
         }
       ]
     },
-    // "portfolio":{
-    //   "projects": [
-    //     {
-    //       "title":"Canadian Wanderlust",
-    //       "category":"My Travel Blog for my post-university travels",
-    //       "image":"canadian-wanderlust.jpg",
-    //       "url":"https://www.canadianwanderlust.com"
-    //     },
-    //     {
-    //       "title":"Fury Fighting Gear",
-    //       "category":"(offline now) A fighting gear company I started",
-    //       "image":"fury-fighting-gear.jpg",
-    //       "url":"http://www.timbakerdev.com"
-    //     },
-    //     {
-    //       "title":"Original Thai Food",
-    //       "category":"Website I built for a restaurant I like in Thailand",
-    //       "image":"original-thai-food.jpg",
-    //       "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-    //     },
-    //     {
-    //       "title":"Resume Website",
-    //       "category":"A React based resume website template",
-    //       "image":"resume-website.jpg",
-    //       "url":"http://www.timbakerdev.com"
-    //     },
-    //     {
-    //       "title":"Smirkspace",
-    //       "category":"(MVP Only) A React and Meteor based chat University project.",
-    //       "image":"smirkspace.jpg",
-    //       "url":"http://www.smirkspace.com"
-    //     }
-    //   ]
-    // },
     "testimonials":{
       "testimonials":[
         {
