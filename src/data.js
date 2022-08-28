@@ -4,7 +4,7 @@ const data = {
       "occupation":"Full Stack Software Engineer",
       "description":"with knowledge of cloud services",
       "image":"profilepic.jpg",
-      "bio":"Software developer with 3 years of experience in developing full-stack applications in the information technology industry involved in complete SDLC, coupled with experience in researching new technologies. Strong problem-solving skills and able to work well independently or as a part of the professional Software Development team.",
+      "bio":"Software developer with 3 years of experience in developing full-stack applications and distributed applications in the information technology industry involved in complete SDLC, coupled with experience in researching new technologies. Strong problem-solving skills and able to work well independently or as a part of the professional Software Development team.",
       "contactmessage":"",
       "email": "skeerti@scu.edu",
       "phone": "7049683387",
@@ -14,7 +14,7 @@ const data = {
         "zip": "95053"
       },
       "website": "http://www.srinageshkeerti.com",
-      "resumedownload":"https://drive.google.com/file/d/1DK3ZrXXITVaDNS3J02xFqUmkE5VMdTEK/view?usp=sharing",
+      "resumedownload":"https://drive.google.com/file/d/1MyHk6juWH1hpMvjT4y2bEvKO3tBRv_Yu/view?usp=sharing",
       "social":[
         {
           "name":"facebook",
@@ -71,6 +71,12 @@ const data = {
       ],
       "work":[
         {
+          "company":"F5",
+          "title":"Software Engineer Intern",
+          "years":"June 2022 - September 2022",
+          "description":"Worked as backend developer for two core modules. Technical stack for this role includes Go, C, Cgo, Kubernetes, Amazon Web Services, Docker"
+        },
+        {
           "company":"Intuit",
           "title":"Software Engineer",
           "years":"January 2021 - July 2021",
@@ -90,6 +96,20 @@ const data = {
         }
       ],
       "projects":[
+        {
+          "title":"Opinion Board",
+          "years":"Apr 2022 - Jun 2022",
+          "description":"Developed an opinion board which allows users to view feed, post opinions and comment on others opinions.", 
+          "tools": "ReactJS, Java, Spring Framework, PostgreSQL, Docker",
+          "link" : "https://github.com/srinagesh11/opinion-board"
+        },
+        {
+          "title":"Edeze",
+          "years":"Jan 2022 - Mar 2022",
+          "description":"This is a student quora app where a student can post his questions and also can answer to other's questions.", 
+          "tools": "Android, Google Firebase (Auth, Database, Notifications), Java",
+          "link" : "https://github.com/srinagesh11/Edeze"
+        },
         {
           "title":"Weather Application",
           "years":"Nov 2021 - Nov 2021",
@@ -132,6 +152,10 @@ const data = {
           "level":"70%"
         },
         {
+          "name":"Go",
+          "level":"60%"
+        },
+        {
           "name":"JavaScript",
           "level":"90%"
         },
@@ -162,6 +186,14 @@ const data = {
         {
           "name":"NoSQL",
           "level":"80%"
+        },
+        {
+          "name":"Docker",
+          "level":"70%"
+        },
+        {
+          "name":"Kubernetes",
+          "level":"70%"
         }
       ]
     },
@@ -173,7 +205,7 @@ const data = {
         },
         {
           "text":"Srinagesh is a very prompt in completing the tasks given to him.He is very down to earth and always completes the tasks before the deadline. He is very good in Cloud computing technologies and also have good knowledge in Java.",
-          "user":"Shiva Prasad (Principal Software Engineer at Actifio)"
+          "user":"Shiva Prasad (Software Engineer at Google)"
         }
       ]
     }
