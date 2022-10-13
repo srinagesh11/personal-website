@@ -155,9 +155,9 @@
                   message: contactMessage
                }
                var data = {
-                  service_id: 'gmailaccount',
+                  service_id: 'service_ns8sbzg',
                   template_id: 'template_x4wkfu3',
-                  user_id: 'user_NN54QOPnNFwHgJ5CV4Meg',
+                  user_id: 't6XTbPiy0PeBpNGIC',
                   template_params: template_params
               };
    //            emailjs.send(data.service_id,data.template_id, template_params)
