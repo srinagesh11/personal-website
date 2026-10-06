@@ -394,7 +394,7 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
     if (wallP <= 0) { gWall.innerHTML = ''; return; }
     const a = wallP, emph = obsOn;
     let h = `<g class="wall" data-i="${OBS_I}">`;
-    h += `<polygon style="fill-opacity:${((0.07 + 0.1 * emph) * a).toFixed(3)};stroke-opacity:${((0.35 + 0.5 * emph) * a).toFixed(2)}" points="${pts([[0, WY, -0.3], [W, WY, -0.3], [W, WY, wallTop], [0, WY, wallTop]])}"/>`;
+    h += `<polygon style="fill-opacity:${((0.07 + 0.2 * emph) * a).toFixed(3)};stroke-opacity:${((0.35 + 0.65 * emph) * a).toFixed(2)};stroke-width:${(1 + emph).toFixed(2)}" points="${pts([[0, WY, -0.3], [W, WY, -0.3], [W, WY, wallTop], [0, WY, wallTop]])}"/>`;
     const [lx, ly] = iso(0.4, WY, wallTop - 0.55);
     h += `<text class="wall-label" opacity="${a.toFixed(2)}" transform="matrix(${C30.toFixed(3)},0.5,0,1,${lx.toFixed(1)},${ly.toFixed(1)})">Observability</text>`;
     LAYERS.forEach((L, i) => {
@@ -407,15 +407,15 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
         const v = Math.sin(u * f1 + i) * 0.55 + Math.sin(u * f2 * 1.7 + i * 2) * 0.3 + (Math.sin(u * 0.31 + i) > 0.92 ? 0.8 : 0);
         line.push([x, WY + 0.02, zb + v * amp]);
       }
-      const lo = (0.55 + 0.45 * emph) * Math.min(1, prog[i] * 1.6) * (1 - 0.6 * ghost[i]) * a;
-      h += `<polyline class="spark" style="stroke-width:${(1.2 + emph * 0.8).toFixed(2)};opacity:${lo.toFixed(2)}" points="${pts(line)}"/>`;
+      const lo = (0.55 + 0.45 * emph) * Math.min(1, prog[i] * 1.6) * (1 - 0.6 * ghost[i] * (1 - emph)) * a;
+      h += `<polyline class="spark" style="stroke-width:${(1.2 + emph * 1.4).toFixed(2)};opacity:${lo.toFixed(2)}" points="${pts(line)}"/>`;
       const zl = zOf(i) + L.h * 0.5;
       const [x1, y1] = iso(W, 0, zl), [x2, y2] = iso(W, WY, zl);
       h += `<line class="link" x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" opacity="${(0.8 * a).toFixed(2)}"/>`;
       if (!reduce) {
         const k = (t * 0.0007 + i * 0.29) % 1;
         const [px, py] = iso(W, WY * k, zl);
-        h += `<circle class="pulse" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${(2.2 + emph).toFixed(1)}" opacity="${(a * (1 - k * 0.5)).toFixed(2)}"/>`;
+        h += `<circle class="pulse" cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="${(2.2 + emph * 1.8).toFixed(1)}" opacity="${(a * (1 - k * 0.5)).toFixed(2)}"/>`;
       }
     });
     gWall.innerHTML = h + '</g>';
@@ -432,7 +432,7 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
     });
     wallP = reduce ? 1 : Math.min(1, Math.max(0, (t - t0 - 250 - N * 190) / 700));
     LAYERS.forEach((_, i) => {
-      const lt = i === sel ? 1 : 0, gt = (sel !== OBS_I && i > sel) ? 1 : 0;
+      const lt = i === sel ? 1 : 0, gt = sel === OBS_I ? 0.75 : (i > sel ? 1 : 0);
       if (Math.abs(lt - lift[i]) > 0.002 || Math.abs(gt - ghost[i]) > 0.002) { lift[i] += (lt - lift[i]) * 0.2; ghost[i] += (gt - ghost[i]) * 0.2; moving = true; }
       else { lift[i] = lt; ghost[i] = gt; }
     });
