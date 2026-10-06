@@ -507,7 +507,7 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
     const row = document.createElement('div');
     row.className = 'tl-row' + (j.cls ? ' ' + j.cls : '');
     const labelLeft = left + width > 72;
-    row.innerHTML = `<div class="tl-org">${j.org}${j.note ? ` <span class="tl-note">${j.note}</span>` : ''}<small>${j.role}</small></div>
+    row.innerHTML = `<div class="tl-org">${j.org}${j.note ? ` <span class="tl-note">(${j.note})</span>` : ''}<small>${j.role}</small></div>
       <div class="tl-track" style="--years:${Y1 - Y0}">
         <span class="tl-bar" style="left:${left}%;width:${width}%"></span>
         <span class="tl-when" style="${labelLeft ? `right:${100 - left}%;padding-left:0;padding-right:8px` : `left:${left + width}%`}">${when}</span>
