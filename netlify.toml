@@ -1,4 +1,4 @@
-# Static site: no build step, publish the repository root.
+# Static site: no build step. The site files live in build/.
 [build]
-  publish = "."
+  publish = "build"
   command = "echo 'static site, nothing to build'"
