@@ -145,6 +145,7 @@ section.block { padding-block: clamp(56px, 8vw, 104px) 0; border-top: 1px solid 
 .tl-track { overflow: visible; }
 .tl-row { display: grid; grid-template-columns: minmax(180px, 0.9fr) minmax(0, 2.2fr); gap: 6px 24px; align-items: center; padding-block: 12px; border-bottom: 1px solid var(--rule); }
 .tl-org { font-weight: 750; font-variation-settings: "wdth" 108; font-size: 1.08rem; line-height: 1.2; }
+.tl-note { font-weight: 400; font-variation-settings: "wdth" 100; font-size: 0.86rem; color: var(--ink-2); }
 .tl-org small { display: block; font-weight: 400; font-variation-settings: "wdth" 100; font-size: 0.86rem; color: var(--ink-2); margin-top: 2px; }
 .tl-track { position: relative; height: 26px; background: repeating-linear-gradient(to right, transparent 0, transparent calc(100% / var(--years) - 1px), var(--rule) calc(100% / var(--years) - 1px), var(--rule) calc(100% / var(--years))); border-left: 1px solid var(--rule); }
 .tl-bar { position: absolute; top: 5px; height: 16px; border-radius: 3px; background: var(--L2); z-index: 1; }
@@ -490,7 +491,7 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
     { org: 'Tesla', role: 'Senior Software Engineer', from: [2023, 1], to: [2026, 9] },
     { org: 'F5', role: 'Software Engineer Intern', from: [2022, 6], to: [2022, 9] },
     { org: 'Intuit', role: 'Software Engineer', from: [2021, 1], to: [2021, 7] },
-    { org: 'Actifio', role: 'Software Engineer · acquired by Google', from: [2019, 8], to: [2020, 12] },
+    { org: 'Actifio', note: 'acquired by Google', role: 'Software Engineer', from: [2019, 8], to: [2020, 12] },
     { org: 'Virtusa', role: 'Software Engineer', from: [2018, 7], to: [2019, 7], when: '2018 – 2019' }
   ];
   const Y0 = 2018, Y1 = Math.max(2027, now.getFullYear() + 1), span = (Y1 - Y0) * 12;
@@ -506,7 +507,7 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
     const row = document.createElement('div');
     row.className = 'tl-row' + (j.cls ? ' ' + j.cls : '');
     const labelLeft = left + width > 72;
-    row.innerHTML = `<div class="tl-org">${j.org}<small>${j.role}</small></div>
+    row.innerHTML = `<div class="tl-org">${j.org}${j.note ? ` <span class="tl-note">${j.note}</span>` : ''}<small>${j.role}</small></div>
       <div class="tl-track" style="--years:${Y1 - Y0}">
         <span class="tl-bar" style="left:${left}%;width:${width}%"></span>
         <span class="tl-when" style="${labelLeft ? `right:${100 - left}%;padding-left:0;padding-right:8px` : `left:${left + width}%`}">${when}</span>
