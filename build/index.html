@@ -455,13 +455,18 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
     const li = document.createElement('li'); if (cls) li.className = cls;
     li.innerHTML = `<button class="lbtn" type="button" aria-pressed="false"><span class="nm">${L.name}</span><i class="sw${i === OBS_I ? ' bar' : ''}" style="background:var(${L.sw})"></i></button>`;
     const b = li.firstChild;
-    b.addEventListener('click', () => select(i));
+    b.addEventListener('click', () => { select(i); reveal(); });
     b.addEventListener('mouseenter', () => select(i));
     btns[i] = b; list.append(li);
   };
   for (let i = N - 1; i >= 0; i--) addBtn(LAYERS[i], i);
   addBtn(OBS, OBS_I, 'obs-item');
-  svg.addEventListener('click', e => { const g = e.target.closest('[data-i]'); if (g) select(+g.dataset.i); });
+  // clicking the drawing: show the explanation, scrolling to it if it's off screen (it sits below on phones)
+  function reveal() {
+    const card = $('explain'), r = card.getBoundingClientRect();
+    if (r.top < 0 || r.bottom > innerHeight) card.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: r.height > innerHeight ? 'start' : 'nearest' });
+  }
+  svg.addEventListener('click', e => { const g = e.target.closest('[data-i]'); if (g) { select(+g.dataset.i); reveal(); } });
 
   let first = true;
   function select(i) {
