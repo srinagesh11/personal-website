@@ -514,6 +514,9 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
   for (let y = Y0; y < Y1; y++) { const s = document.createElement('span'); s.textContent = "'" + String(y).slice(2); $('years').append(s); }
 
   $('yr').textContent = now.getFullYear();
+
+  // remove the old site's service worker for returning visitors
+  if ('serviceWorker' in navigator) navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister())).catch(() => {});
 })();
 </script>
 </body>
