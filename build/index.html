@@ -148,8 +148,6 @@ section.block { padding-block: clamp(56px, 8vw, 104px) 0; border-top: 1px solid 
 .tl-org small { display: block; font-weight: 400; font-variation-settings: "wdth" 100; font-size: 0.86rem; color: var(--ink-2); margin-top: 2px; }
 .tl-track { position: relative; height: 26px; background: repeating-linear-gradient(to right, transparent 0, transparent calc(100% / var(--years) - 1px), var(--rule) calc(100% / var(--years) - 1px), var(--rule) calc(100% / var(--years))); border-left: 1px solid var(--rule); }
 .tl-bar { position: absolute; top: 5px; height: 16px; border-radius: 3px; background: var(--L2); z-index: 1; }
-.tl-school { position: absolute; top: -12px; bottom: -13px; background: color-mix(in srgb, var(--ink-2) 9%, transparent); }
-.tl-school-label { position: absolute; top: 0; line-height: 26px; padding-left: 6px; font-size: 0.72rem; color: var(--ink-2); white-space: nowrap; }
 .tl-row.now .tl-bar { background: var(--gpu); }
 .tl-row.now .tl-bar::after { content: ""; position: absolute; right: -5px; top: 3px; width: 10px; height: 10px; border-radius: 50%; background: var(--gpu); animation: ping 2s infinite; }
 @keyframes ping { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--gpu) 60%, transparent); } 100% { box-shadow: 0 0 0 10px transparent; } }
@@ -507,10 +505,8 @@ footer { border-top: 1px solid var(--rule); padding-block: 22px 40px; color: var
     const row = document.createElement('div');
     row.className = 'tl-row' + (j.cls ? ' ' + j.cls : '');
     const labelLeft = left + width > 72;
-    const sL = m([2021, 9]) / span * 100, sW = (m([2023, 3]) - m([2021, 9]) + 1) / span * 100;
-    const school = `<span class="tl-school" style="left:${sL}%;width:${sW}%"></span>` + (j.org === 'Lambda' ? `<span class="tl-school-label" style="left:${sL}%">M.S., Santa Clara</span>` : '');
     row.innerHTML = `<div class="tl-org">${j.org}<small>${j.role}</small></div>
-      <div class="tl-track" style="--years:${Y1 - Y0}">${school}
+      <div class="tl-track" style="--years:${Y1 - Y0}">
         <span class="tl-bar" style="left:${left}%;width:${width}%"></span>
         <span class="tl-when" style="${labelLeft ? `right:${100 - left}%;padding-left:0;padding-right:8px` : `left:${left + width}%`}">${when}</span>
       </div>`;
