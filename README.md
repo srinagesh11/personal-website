@@ -1,1 +1,3 @@
-This is my personal website created by me. I've Developed the website using ReactJs. Integrated the website with EmailJS so that I could receive emails to my personal account. Also deployed the application in Netlify.
+# srinageshkeerti.com
+
+Personal website of Srinagesh Keerti. A single static HTML page, deployed on Netlify from `master`.
